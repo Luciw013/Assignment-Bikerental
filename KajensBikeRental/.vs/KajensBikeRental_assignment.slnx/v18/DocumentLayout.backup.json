@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\j-wal\\Desktop\\BED26-ALLT\\Code_Abyss\\Asssignments\\KajensBikeRental\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{164DDC7A-A551-3836-5767-BF5742449AAA}|KajensBikeRental_assignment\\KajensBikeRental_assignment.csproj|c:\\users\\j-wal\\desktop\\bed26-allt\\code_abyss\\asssignments\\kajensbikerental\\kajensbikerental_assignment\\bike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{164DDC7A-A551-3836-5767-BF5742449AAA}|KajensBikeRental_assignment\\KajensBikeRental_assignment.csproj|solutionrelative:kajensbikerental_assignment\\bike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{164DDC7A-A551-3836-5767-BF5742449AAA}|KajensBikeRental_assignment\\KajensBikeRental_assignment.csproj|c:\\users\\j-wal\\desktop\\bed26-allt\\code_abyss\\asssignments\\kajensbikerental\\kajensbikerental_assignment\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{164DDC7A-A551-3836-5767-BF5742449AAA}|KajensBikeRental_assignment\\KajensBikeRental_assignment.csproj|solutionrelative:kajensbikerental_assignment\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{164DDC7A-A551-3836-5767-BF5742449AAA}|KajensBikeRental_assignment\\KajensBikeRental_assignment.csproj|c:\\users\\j-wal\\desktop\\bed26-allt\\code_abyss\\asssignments\\kajensbikerental\\kajensbikerental_assignment\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{164DDC7A-A551-3836-5767-BF5742449AAA}|KajensBikeRental_assignment\\KajensBikeRental_assignment.csproj|solutionrelative:kajensbikerental_assignment\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{164DDC7A-A551-3836-5767-BF5742449AAA}|KajensBikeRental_assignment\\KajensBikeRental_assignment.csproj|c:\\users\\j-wal\\desktop\\bed26-allt\\code_abyss\\asssignments\\kajensbikerental\\kajensbikerental_assignment\\ebike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{164DDC7A-A551-3836-5767-BF5742449AAA}|KajensBikeRental_assignment\\KajensBikeRental_assignment.csproj|solutionrelative:kajensbikerental_assignment\\ebike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{164DDC7A-A551-3836-5767-BF5742449AAA}|KajensBikeRental_assignment\\KajensBikeRental_assignment.csproj|c:\\users\\j-wal\\desktop\\bed26-allt\\code_abyss\\asssignments\\kajensbikerental\\kajensbikerental_assignment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{164DDC7A-A551-3836-5767-BF5742449AAA}|KajensBikeRental_assignment\\KajensBikeRental_assignment.csproj|solutionrelative:kajensbikerental_assignment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\j-wal\\Desktop\\BED26-ALLT\\Code_Abyss\\Asssignments\\KajensBikeRental\\KajensBikeRental_assignment\\Customer.cs",
+              "RelativeDocumentMoniker": "KajensBikeRental_assignment\\Customer.cs",
+              "ToolTip": "C:\\Users\\j-wal\\Desktop\\BED26-ALLT\\Code_Abyss\\Asssignments\\KajensBikeRental\\KajensBikeRental_assignment\\Customer.cs",
+              "RelativeToolTip": "KajensBikeRental_assignment\\Customer.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T09:23:40.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "C:\\Users\\j-wal\\Desktop\\BED26-ALLT\\Code_Abyss\\Asssignments\\KajensBikeRental\\KajensBikeRental_assignment\\Vehicle.cs",
+              "RelativeDocumentMoniker": "KajensBikeRental_assignment\\Vehicle.cs",
+              "ToolTip": "C:\\Users\\j-wal\\Desktop\\BED26-ALLT\\Code_Abyss\\Asssignments\\KajensBikeRental\\KajensBikeRental_assignment\\Vehicle.cs",
+              "RelativeToolTip": "KajensBikeRental_assignment\\Vehicle.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T09:15:06.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EBike.cs",
+              "DocumentMoniker": "C:\\Users\\j-wal\\Desktop\\BED26-ALLT\\Code_Abyss\\Asssignments\\KajensBikeRental\\KajensBikeRental_assignment\\EBike.cs",
+              "RelativeDocumentMoniker": "KajensBikeRental_assignment\\EBike.cs",
+              "ToolTip": "C:\\Users\\j-wal\\Desktop\\BED26-ALLT\\Code_Abyss\\Asssignments\\KajensBikeRental\\KajensBikeRental_assignment\\EBike.cs",
+              "RelativeToolTip": "KajensBikeRental_assignment\\EBike.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T09:14:23.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bike.cs",
+              "DocumentMoniker": "C:\\Users\\j-wal\\Desktop\\BED26-ALLT\\Code_Abyss\\Asssignments\\KajensBikeRental\\KajensBikeRental_assignment\\Bike.cs",
+              "RelativeDocumentMoniker": "KajensBikeRental_assignment\\Bike.cs",
+              "ToolTip": "C:\\Users\\j-wal\\Desktop\\BED26-ALLT\\Code_Abyss\\Asssignments\\KajensBikeRental\\KajensBikeRental_assignment\\Bike.cs",
+              "RelativeToolTip": "KajensBikeRental_assignment\\Bike.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T09:14:01.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\j-wal\\Desktop\\BED26-ALLT\\Code_Abyss\\Asssignments\\KajensBikeRental\\KajensBikeRental_assignment\\Program.cs",
+              "RelativeDocumentMoniker": "KajensBikeRental_assignment\\Program.cs",
+              "ToolTip": "C:\\Users\\j-wal\\Desktop\\BED26-ALLT\\Code_Abyss\\Asssignments\\KajensBikeRental\\KajensBikeRental_assignment\\Program.cs",
+              "RelativeToolTip": "KajensBikeRental_assignment\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T09:12:54.739Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
