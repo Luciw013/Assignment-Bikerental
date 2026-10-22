@@ -1,9 +1,18 @@
 ﻿using KajensBikeRental_assignment;
 using System.Xml.Linq;
 
-//Lists
+//Fordons-objekt i lista
 List<Vehicle> vehicles = new List<Vehicle>();
+Vehicle bike1 = new Bike(1, "Cykel", 40.00m, true);
+Vehicle bike2 = new Bike(2, "Cykel", 40.00m, true);
+Vehicle bike3 = new EBike(3, "Elcykel", 70.00m, true, 80);
+Vehicle bike4 = new EBike(4, "Elcykel", 70.00m, true, 25);
+vehicles.AddRange(bike1, bike2, bike3, bike4);
+
+//kundobjekt i lista
 List<Customer> customers = new List<Customer>();
+
+
 
 //Menu
 Console.WriteLine("---Kajens Cykeluthyrning---");
@@ -29,17 +38,11 @@ while (true)
 
     else if (choice == 2)
     {
-        Console.Write("Ange kundinformation: ");
-        //string customer = Console.ReadLine();
-        //customers.Add(new Customer
-        //{
-        //    Name = name;
-        //    Age = age;
-        //    Membership = membership;
-        //});
-       
-
+      //lägg till kund
     }
+
+
+
 
     else if (choice == 3)
     {

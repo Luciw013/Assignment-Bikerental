@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using System.Text;
 
 namespace KajensBikeRental_assignment
@@ -9,6 +10,7 @@ namespace KajensBikeRental_assignment
         public string Name { get; set; }
         public int Age { get; set; }
         public bool Membership { get; set; }
+      
 
         public Customer(string name, int age, bool membership)
         {
@@ -17,8 +19,13 @@ namespace KajensBikeRental_assignment
             Membership = membership;
         }
 
+        public void AddCustomer(string name, int age, bool membership)
+        { 
+            
+            
+            
+            Name = name, Age = age, Membership = membership }
         
-
 
 
 
