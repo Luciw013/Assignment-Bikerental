@@ -1,0 +1,15 @@
+
+# Visual Studio
+.vs/
+
+# Kompilerade filer
+**/bin/
+**/obj/
+
+# Användarinställningar
+*.user
+*.suo
+
+# Operativsystem
+.DS_Store
+Thumbs.db
