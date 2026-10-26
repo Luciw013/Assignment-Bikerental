@@ -1,4 +1,5 @@
 ﻿using KajensBikeRental_assignment;
+using System.Reflection;
 using System.Xml.Linq;
 
 //Fordons-objekt i lista
@@ -9,12 +10,10 @@ Vehicle bike3 = new EBike(3, "Elcykel", 70.00m, true, 80);
 Vehicle bike4 = new EBike(4, "Elcykel", 70.00m, true, 25);
 vehicles.AddRange(bike1, bike2, bike3, bike4);
 
-//kundobjekt i lista
-List<Customer> customers = new List<Customer>();
+List<Customer> listOfCustomers = new List<Customer>();
 
 
-
-//Menu
+//Meny
 Console.WriteLine("---Kajens Cykeluthyrning---");
 Console.WriteLine("Gör ett av följande val");
 Console.WriteLine("1. Visa alla fordon");
@@ -38,11 +37,23 @@ while (true)
 
     else if (choice == 2)
     {
-      //lägg till kund
+        
+        Console.WriteLine("Ange kunduppgifter: ");
+        Console.Write($"Namn: ");
+        string newName = Console.ReadLine(); //lagrar + läser in inmatning som string
+        Console.Write("Ålder: ");
+        int newAge = int.Parse(Console.ReadLine());  //konverterar inläst värde från string till int.
+        Console.Write("Är kunden medlem? (ja/nej): ");
+        string newIsMember = Console.ReadLine().ToLower();
+
+        bool isMember = newIsMember == "ja";
+
+        Customer newCustomer = new Customer(newName, newAge, newIsMember);
+        listOfCustomers.Add(newCustomer);
+
+
+
     }
-
-
-
 
     else if (choice == 3)
     {

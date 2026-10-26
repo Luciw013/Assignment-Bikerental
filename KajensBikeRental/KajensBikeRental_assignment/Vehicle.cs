@@ -22,7 +22,6 @@ namespace KajensBikeRental_assignment
         {
             Console.WriteLine($"Id: {Id}");
             Console.WriteLine($"Typ: {Type}");
-            Console.WriteLine($"Baspris: {Baseprice}");
             Console.WriteLine($"Är tillgänglig: {Status}");
         }
 

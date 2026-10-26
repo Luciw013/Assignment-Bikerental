@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using System.Text;
+using System.Xml.Linq;
 
 namespace KajensBikeRental_assignment
 {
@@ -9,23 +10,31 @@ namespace KajensBikeRental_assignment
     {
         public string Name { get; set; }
         public int Age { get; set; }
-        public bool Membership { get; set; }
-      
-
-        public Customer(string name, int age, bool membership)
+        public bool IsMember { get; set; }
+            
+        public Customer(string name, int age, bool isMember)
         {
             Name = name;
             Age = age;
-            Membership = membership;
+            IsMember = isMember;
         }
 
-        public void AddCustomer(string name, int age, bool membership)
-        { 
-            
-            
-            
-            Name = name, Age = age, Membership = membership }
+        //public void RegisterNewCustomer()
+        {
+           
+
+           
+        }
+
         
+
+
+
+
+
+
+
+
 
 
 

@@ -23,3 +23,4 @@ BÄTTRINGSFÖRSLAG ej implementerade
 	flytta objektinstanser+listor till annan plats
 	gör alternativ för att visa fordon av bara 1 typ
 	använd enumeration för  fordonstyp och status
+	ålderskoll för kunder yngre än 15 år borde göras på annat sätt??
