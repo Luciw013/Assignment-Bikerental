@@ -3,7 +3,7 @@
 	ändra menyoutput-layout
 	hitta korrekt typ för procentvärden
 	ändra till lämpliga encapsulation-nivåer
-		justera getters and setters -särskilt i booleans
+		justera getters and setters 
 
 
 
@@ -15,12 +15,7 @@ ATT GÖRA
 		
 	
 
-	sammanställ VG-kriterier (UML-diagram + reflektioner)
 
 
 
-BÄTTRINGSFÖRSLAG ej implementerade
-	flytta objektinstanser+listor till annan plats
-	gör alternativ för att visa fordon av bara 1 typ
-	använd enumeration för  fordonstyp och status
-	ålderskoll för kunder yngre än 15 år borde göras på annat sätt??
+

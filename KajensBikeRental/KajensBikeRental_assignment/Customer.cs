@@ -11,7 +11,8 @@ namespace KajensBikeRental_assignment
         public string Name { get; set; }
         public int Age { get; set; }
         public bool IsMember { get; set; }
-            
+        public static List<Customer> ListOfCustomers { get;} = new List<Customer>();
+
         public Customer(string name, int age, bool isMember)
         {
             Name = name;
@@ -19,24 +20,28 @@ namespace KajensBikeRental_assignment
             IsMember = isMember;
         }
 
-        //public void RegisterNewCustomer()
+        public static void RegisterNewCustomer()
         {
-           
+            Console.WriteLine("Ange kunduppgifter: ");
+            Console.Write($"Namn: ");
+            string newName = Console.ReadLine(); //lagrar + läser in inmatning som string
+            Console.Write("Ålder: ");
+            int newAge = int.Parse(Console.ReadLine());  //konverterar inläst värde från string till int.
+            Console.Write("Är kunden medlem? (ja/nej): ");
+            string newIsMember = Console.ReadLine().ToLower();
+            while (newIsMember != "ja" && newIsMember != "nej") //hindrar fel inmatning + risk att boolean sätts till fel värde
+            {
+                Console.Write("Ogiltigt svar, ange ja eller nej:");
+                newIsMember = Console.ReadLine().ToLower();
+            }
 
-           
+            bool isMember = newIsMember == "ja";
+
+            //Customer.ListOfCustomers.Add(newCustomer);
+            Console.WriteLine("Kunden är registrerad.");
         }
 
-        
-
-
-
-
-
-
-
-
-
-
+           
 
     }
 }
