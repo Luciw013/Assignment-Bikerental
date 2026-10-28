@@ -20,7 +20,7 @@ namespace KajensBikeRental_assignment
             IsMember = isMember;
         }
 
-        public static void RegisterNewCustomer()
+        public static Customer RegisterNewCustomer()
         {
             Console.WriteLine("Ange kunduppgifter: ");
             Console.Write($"Namn: ");
@@ -29,7 +29,7 @@ namespace KajensBikeRental_assignment
             int newAge = int.Parse(Console.ReadLine());  //konverterar inläst värde från string till int.
             Console.Write("Är kunden medlem? (ja/nej): ");
             string newIsMember = Console.ReadLine().ToLower();
-            while (newIsMember != "ja" && newIsMember != "nej") //hindrar fel inmatning + risk att boolean sätts till fel värde
+            while (newIsMember != "ja" && newIsMember != "nej") //hindrar fel inmatning + risk att boolean sätts i fel läge.
             {
                 Console.Write("Ogiltigt svar, ange ja eller nej:");
                 newIsMember = Console.ReadLine().ToLower();
@@ -37,8 +37,13 @@ namespace KajensBikeRental_assignment
 
             bool isMember = newIsMember == "ja";
 
-            //Customer.ListOfCustomers.Add(newCustomer);
             Console.WriteLine("Kunden är registrerad.");
+
+            Customer newCustomer = new Customer(newName, newAge, isMember); //gör användar-inmatad info till objekt + variabel som kan skickas vidare.
+
+            return newCustomer; //
+
+
         }
 
            

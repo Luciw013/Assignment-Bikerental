@@ -38,19 +38,25 @@ while (true)
     else if (choice == 2)
     {
         Customer.RegisterNewCustomer();
-
+       
 
 
     }
 
     else if (choice == 3)
     {
-        //  hyr ut
+        //  metodanrop RentVehicle. 
+        // ska känna till, vilken kund som hyr, vilket fordon som hyrs ut + ev starttid för hyrperiod
+     
     }
 
     else if (choice == 4)
     {
-        //lämna tbx
+        //metodanrop ReturnVehicle 
+        //ska känna till vilken kund som återlämnar, vilket fordon som återlämnas, + ev sluttid för hyrperiod.
+        
+        //metodanrop PrintReceipt
+        //ska känna till uträknat slutpris (justerat enl ev medlemsrabatt + hyrtid), vilken kund + ev vilket fordon. 
     }
 
     else if (choice == 5)
