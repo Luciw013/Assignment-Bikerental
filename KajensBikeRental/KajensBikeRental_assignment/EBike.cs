@@ -7,33 +7,40 @@ namespace KajensBikeRental_assignment
 {
     public class EBike : Vehicle
     {
-        public int BatteryLevel { get; set; }
+        public int BatteryLevel { get; set; } = 100;
+        public decimal PricePerHour = 70.00m;
 
-        public EBike(int id, string type, decimal baseprice, bool status, int batterylevel) : base(id, type, baseprice, status)
+        public EBike(int id, string type, decimal priceperhour, bool rentable, int batterylevel) : base(id, type, rentable)
         {
             BatteryLevel = batterylevel;
             Id = id;
             Type = type;
-            Baseprice = baseprice;
-            Status = status;
+            PricePerHour = priceperhour;
+            Rentable = rentable;
         }
 
         public override void ShowAllBikes()
         {
             Console.WriteLine($"Id: {Id}");
             Console.WriteLine($"Typ: {Type}");
-            Console.WriteLine($"Är tillgänglig: {Status}");
+            Console.WriteLine($"Status: {Rentable}");
             Console.WriteLine($"Batteri: {BatteryLevel}%");
         }
 
-
-        //public void CheckBattery()
         
-
-
-
-
+                                               
+                                               
+                                               
+                                               
+                                               
+                                               
     }
+    
+
+
+
+
+
 
 
 

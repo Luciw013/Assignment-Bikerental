@@ -9,10 +9,6 @@ Vehicle bike2 = new Bike(2, "Cykel", 40.00m, true);
 Vehicle bike3 = new EBike(3, "Elcykel", 70.00m, true, 80);
 Vehicle bike4 = new EBike(4, "Elcykel", 70.00m, true, 25);
 vehicles.AddRange(bike1, bike2, bike3, bike4);
-
-
-
-
 //Meny
 Console.WriteLine("---Kajens Cykeluthyrning---");
 Console.WriteLine("Gör ett av följande val");
@@ -53,10 +49,10 @@ while (true)
     else if (choice == 4)
     {
         //metodanrop ReturnVehicle 
-        //ska känna till vilken kund som återlämnar, vilket fordon som återlämnas, + ev sluttid för hyrperiod.
+       
         
         //metodanrop PrintReceipt
-        //ska känna till uträknat slutpris (justerat enl ev medlemsrabatt + hyrtid), vilken kund + ev vilket fordon. 
+        
     }
 
     else if (choice == 5)

@@ -6,20 +6,20 @@ namespace KajensBikeRental_assignment
 {
     public class Bike : Vehicle
     {
-        public Bike(int id, string type, decimal baseprice, bool status) : base(id, type, baseprice, status)
+        public decimal PricePerHour = 40.00m;
+        public Bike(int id, string type, decimal priceperhour, bool rentable) : base(id, type, rentable)
         {
             Id = id;
             Type = type;
-            Baseprice = baseprice;
-            Status = status;
+            PricePerHour = priceperhour;
+            Rentable = rentable;
         }
 
         public override void ShowAllBikes()
         {
             Console.WriteLine($"Id: {Id}");
             Console.WriteLine($"Typ: {Type}");
-            Console.WriteLine($"Baspris: {Baseprice}");
-            Console.WriteLine($"Är tillgänglig: {Status}");
+            Console.WriteLine($"Status: {Rentable}");
         }
 
 
@@ -28,5 +28,5 @@ namespace KajensBikeRental_assignment
 
 
 
-        }
+    }
 }

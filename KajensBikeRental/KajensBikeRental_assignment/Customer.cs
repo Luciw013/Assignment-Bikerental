@@ -39,9 +39,9 @@ namespace KajensBikeRental_assignment
 
             Console.WriteLine("Kunden är registrerad.");
 
-            Customer newCustomer = new Customer(newName, newAge, isMember); //gör användar-inmatad info till objekt + variabel som kan skickas vidare.
+            Customer newCustomer = new Customer(newName, newAge, isMember); //lägger användar-input i variabel
 
-            return newCustomer; //
+            return newCustomer;
 
 
         }
