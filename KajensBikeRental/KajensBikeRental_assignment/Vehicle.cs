@@ -25,7 +25,6 @@ namespace KajensBikeRental_assignment
             Console.WriteLine($"Status: {Rentable}");
         }
 
-        
 
     }
 }

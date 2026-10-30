@@ -43,7 +43,7 @@ namespace KajensBikeRental_assignment
             Customer newCustomer = new Customer(newName, newAge, isMember); //gör kundobjekt
 
             //ListOfCustomers.Add(newCustomer);
-            RentVehicle rentVehicle = new RentVehicle();    //koppling till RentVehicle-class, så den når newCustomer-variabel
+            RentVehicle rentVehicle = new RentVehicle();    //koppling till RentVehicle-class
 
             return newCustomer;
         }

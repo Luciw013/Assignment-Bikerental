@@ -6,44 +6,22 @@ namespace KajensBikeRental_assignment
 {
     public class RentVehicle
     {
-        public void StartRental(Customer newCustomer, Vehicle bike)
+      
+        public void StartRental(Customer customer, List<Vehicle> vehicles)
         {
-            if (bike.Rentable == true)
+            Console.WriteLine("Ange fordons-id för att välja cykel:");
+            int chosenbike = int.Parse(Console.ReadLine());
+            Vehicle bikechoice = vehicles.Find(bike => bike.Id == chosenbike);
+            if (bikechoice.Rentable == true)
             {
-                bike.Rentable = false;
-
-                Console.WriteLine($"Fordon {bike.Id} är uthyrd till {newCustomer}");
+                bikechoice.Rentable = false;
+                Console.WriteLine($"Fordon {bikechoice.Id} är uthyrd till {customer.Name}");
             }
             else
             {
-                Console.WriteLine("Fordonet är redan uthyrt.");
+                Console.WriteLine("Fordonet kan inte hyras ut.");
             }
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
-
-
-
-
-
-
-
-}
 }

@@ -8,8 +8,10 @@ Vehicle bike1 = new Bike(1, "Cykel", 40.00m, true);
 Vehicle bike2 = new Bike(2, "Cykel", 40.00m, true);
 Vehicle bike3 = new EBike(3, "Elcykel", 70.00m, true, 80);
 Vehicle bike4 = new EBike(4, "Elcykel", 70.00m, true, 25);
-vehicles.AddRange(bike1, bike2, bike3, bike4);
+vehicles.AddRange([bike1, bike2, bike3, bike4]);
 
+Customer newCustomer = null;                    //test
+RentVehicle rentVehicle = new RentVehicle();    //test
 
 //Meny
 Console.WriteLine("---Kajens Cykeluthyrning---");
@@ -24,6 +26,7 @@ Console.WriteLine("6: Avsluta");
 while (true)
 {
     int choice = int.Parse(Console.ReadLine());
+   
 
     if (choice == 1)
     {
@@ -35,15 +38,16 @@ while (true)
 
     else if (choice == 2)
     {
-        Customer.RegisterCustomer();
+        newCustomer = Customer.RegisterCustomer(); //lagrar newCustomer, så den kan användas vid anrop av StartRental-metod 
+        
     }
 
     else if (choice == 3)
     {
-        RentVehicle.StartRental();
+        rentVehicle.StartRental(newCustomer, vehicles);
         
-     
     }
+
 
     else if (choice == 4)
     {
