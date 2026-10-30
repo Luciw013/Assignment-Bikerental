@@ -12,7 +12,7 @@ namespace KajensBikeRental_assignment
         public int Age { get; set; }
         public bool IsMember { get; set; }
         public static List<Customer> ListOfCustomers { get;} = new List<Customer>();
-
+        
         public Customer(string name, int age, bool isMember)
         {
             Name = name;
@@ -20,16 +20,17 @@ namespace KajensBikeRental_assignment
             IsMember = isMember;
         }
 
-        public static Customer RegisterNewCustomer()
+        public static Customer RegisterCustomer() // skapar kond-objekt från användar-input
         {
+            
             Console.WriteLine("Ange kunduppgifter: ");
             Console.Write($"Namn: ");
-            string newName = Console.ReadLine(); //lagrar + läser in inmatning som string
+            string newName = Console.ReadLine(); 
             Console.Write("Ålder: ");
-            int newAge = int.Parse(Console.ReadLine());  //konverterar inläst värde från string till int.
+            int newAge = int.Parse(Console.ReadLine());  //konverterar användar-input från string till int.
             Console.Write("Är kunden medlem? (ja/nej): ");
             string newIsMember = Console.ReadLine().ToLower();
-            while (newIsMember != "ja" && newIsMember != "nej") //hindrar fel inmatning + risk att boolean sätts i fel läge.
+            while (newIsMember != "ja" && newIsMember != "nej") //begränsar giltiga svarsalternativ (så bool inte tolkas fel}
             {
                 Console.Write("Ogiltigt svar, ange ja eller nej:");
                 newIsMember = Console.ReadLine().ToLower();
@@ -39,14 +40,13 @@ namespace KajensBikeRental_assignment
 
             Console.WriteLine("Kunden är registrerad.");
 
-            Customer newCustomer = new Customer(newName, newAge, isMember); //lägger användar-input i variabel
+            Customer newCustomer = new Customer(newName, newAge, isMember); //gör kundobjekt
+
+            //ListOfCustomers.Add(newCustomer);
+            RentVehicle rentVehicle = new RentVehicle();    //koppling till RentVehicle-class, så den når newCustomer-variabel
 
             return newCustomer;
-
-
         }
-
-           
 
     }
 }

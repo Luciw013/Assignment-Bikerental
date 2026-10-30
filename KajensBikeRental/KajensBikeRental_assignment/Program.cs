@@ -9,6 +9,8 @@ Vehicle bike2 = new Bike(2, "Cykel", 40.00m, true);
 Vehicle bike3 = new EBike(3, "Elcykel", 70.00m, true, 80);
 Vehicle bike4 = new EBike(4, "Elcykel", 70.00m, true, 25);
 vehicles.AddRange(bike1, bike2, bike3, bike4);
+
+
 //Meny
 Console.WriteLine("---Kajens Cykeluthyrning---");
 Console.WriteLine("Gör ett av följande val");
@@ -33,25 +35,19 @@ while (true)
 
     else if (choice == 2)
     {
-        Customer.RegisterNewCustomer();
-       
-
-
+        Customer.RegisterCustomer();
     }
 
     else if (choice == 3)
     {
-        //  metodanrop RentVehicle. 
-        // ska känna till, vilken kund som hyr, vilket fordon som hyrs ut + ev starttid för hyrperiod
+        RentVehicle.StartRental();
+        
      
     }
 
     else if (choice == 4)
     {
         //metodanrop ReturnVehicle 
-       
-        
-        //metodanrop PrintReceipt
         
     }
 
@@ -64,6 +60,7 @@ while (true)
     {
         break;
     }
+
     else
     {
         Console.WriteLine("Ogiltigt val");

@@ -7,7 +7,7 @@ namespace KajensBikeRental_assignment
 {
     public class EBike : Vehicle
     {
-        public int BatteryLevel { get; set; } = 100;
+        public int BatteryLevel { get; set; }
         public decimal PricePerHour = 70.00m;
 
         public EBike(int id, string type, decimal priceperhour, bool rentable, int batterylevel) : base(id, type, rentable)
@@ -27,7 +27,16 @@ namespace KajensBikeRental_assignment
             Console.WriteLine($"Batteri: {BatteryLevel}%");
         }
 
-        
+        //public void ChargeBattery(bike)
+        //{
+        // EBike   
+        //    if ( >= 100)
+        //    {
+        //        bike = 100;
+        //    }
+                    
+                    
+        //}
                                                
                                                
                                                

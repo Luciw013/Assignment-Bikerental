@@ -25,10 +25,7 @@ namespace KajensBikeRental_assignment
             Console.WriteLine($"Status: {Rentable}");
         }
 
-        public decimal CalculateRentalCost(int hours)
-        {
-            return PricePerHour * hours;
-        }
+        
 
     }
 }
