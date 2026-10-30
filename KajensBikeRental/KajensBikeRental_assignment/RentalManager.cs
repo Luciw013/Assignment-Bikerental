@@ -32,7 +32,7 @@ namespace KajensBikeRental_assignment
                 return;
             }
 
-            if  (customer.Age >= 15)  //kollar kund minimum-åldersgräns
+            if  (customer.Age <= 15)  //kollar kund minimum-åldersgräns
             {
                 Console.WriteLine("Uthyrning till kund under 15 år ej tillåtet.");
                 return;

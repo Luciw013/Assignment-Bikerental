@@ -9,10 +9,7 @@
 
 ATT GÖRA
 	
-		pris-korrigering för medlemsrabatt + hyrtid, uträkning av korrekt pris
-		
-	kvittotext med korrekt returnering av pris etc.
-		
+	gör klart ReturnVehicle-metod med prisuträkning och kvittoprint
 	
 
 
