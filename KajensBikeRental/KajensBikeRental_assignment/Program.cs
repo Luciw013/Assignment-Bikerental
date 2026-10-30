@@ -51,8 +51,8 @@ while (true)
 
     else if (choice == 4)
     {
-        //metodanrop ReturnVehicle 
-        
+        rentVehicle.ReturnVehicle(newCustomer, vehicles);
+
     }
 
     else if (choice == 5)

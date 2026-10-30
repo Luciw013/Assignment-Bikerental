@@ -11,14 +11,9 @@ namespace KajensBikeRental_assignment
         {
             foreach (Vehicle bike in vehicles)
             {
-                if (bike is EBike ebike && ebike.BatteryLevel < 30)
+                if (bike is EBike electricalbike && electricalbike.BatteryLevel < 30) //hindrar uthyrning av elcykel med batterinivå under 30%
                 {
-                    bike.Rentable = false;
-                }
-
-                if (bike is EBike && customer.Age <= 17)
-                {
-                    bike.Rentable = false;
+                    bike.Rentable = false;          
                 }
             }
 
@@ -31,19 +26,72 @@ namespace KajensBikeRental_assignment
                 return;
             }
 
-            else if (bikechoice.Rentable == true && (customer.Age >= 15)) //kollar fordons-tillgänglighet + kund åldersgräns
+            if (!bikechoice.Rentable) //kollar fordons-tillgänglighet
             {
-                bikechoice.Rentable = false;
-                Console.WriteLine($"Fordon {bikechoice.Id} är uthyrd till {customer.Name}");
+                Console.WriteLine("Fordonet är inte tillgängligt.");
+                return;
             }
 
-            else 
+            if  (customer.Age >= 15)  //kollar kund minimum-åldersgräns
             {
-                Console.WriteLine("Fordonet kan inte hyras ut.");
-               
+                Console.WriteLine("Uthyrning till kund under 15 år ej tillåtet.");
+                return;
+            }
+
+            if (bikechoice is EBike ebike)
+            {
+                if (customer.Age <= 17)             //åldersgräns för uthyrning av elcykel
+                {
+                    Console.WriteLine("Kund under 18 år får ej hyra elcykel.");
+                    return;
+                }
+
+                if (ebike.BatteryLevel < 30)
+                {
+                    Console.WriteLine("Lågt batteri. Ladda innan uthyrning.");
+                    return;
+                }
+
+            }
+            
+            bikechoice.Rentable = false;
+            Console.WriteLine($"Fordon {bikechoice.Id} är uthyrd till {customer.Name}");
+        }
+
+        public void ReturnVehicle(Customer customer, List<Vehicle> vehicles)
+        {
+
+
+
+
+
+
+        }
+
+        public void ChargeBattery(List<Vehicle> vehicles)
+        {
+            foreach (Vehicle bike in vehicles)
+            {
+                if (bike is EBike ebike && ebike.BatteryLevel < 30)
+                {
+                    ebike.BatteryLevel = 100;
+                    ebike.Rentable = true;
+                }
             }
         }
+
+
+
+
+
+
+
+
+
+
     } 
+
+
           
             
 }   
