@@ -11,7 +11,7 @@ Vehicle bike4 = new EBike(4, "Elcykel", 70.00m, true, 25);
 vehicles.AddRange([bike1, bike2, bike3, bike4]);
 
 Customer newCustomer = null;                    //test
-RentVehicle rentVehicle = new RentVehicle();    //test
+RentalManager rentVehicle = new RentalManager();    //test
 
 //Meny
 Console.WriteLine("---Kajens Cykeluthyrning---");

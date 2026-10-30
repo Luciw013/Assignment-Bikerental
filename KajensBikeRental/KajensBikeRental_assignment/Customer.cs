@@ -30,20 +30,15 @@ namespace KajensBikeRental_assignment
             int newAge = int.Parse(Console.ReadLine());  //konverterar användar-input från string till int.
             Console.Write("Är kunden medlem? (ja/nej): ");
             string newIsMember = Console.ReadLine().ToLower();
-            while (newIsMember != "ja" && newIsMember != "nej") //begränsar giltiga svarsalternativ (så bool inte tolkas fel}
+            while (newIsMember != "ja" && newIsMember != "nej") //hindrar ogiltiga svar (så bool inte tolkas fel}
             {
                 Console.Write("Ogiltigt svar, ange ja eller nej:");
                 newIsMember = Console.ReadLine().ToLower();
             }
 
             bool isMember = newIsMember == "ja";
-
-            Console.WriteLine("Kunden är registrerad.");
-
             Customer newCustomer = new Customer(newName, newAge, isMember); //gör kundobjekt
-
-            //ListOfCustomers.Add(newCustomer);
-            RentVehicle rentVehicle = new RentVehicle();    //koppling till RentVehicle-class
+            RentalManager rentVehicle = new RentalManager();    //koppling till RentVehicle-class
 
             return newCustomer;
         }

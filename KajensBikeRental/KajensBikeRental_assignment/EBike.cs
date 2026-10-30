@@ -27,23 +27,14 @@ namespace KajensBikeRental_assignment
             Console.WriteLine($"Batteri: {BatteryLevel}%");
         }
 
-        //public void ChargeBattery(bike)
-        //{
-        // EBike   
-        //    if ( >= 100)
-        //    {
-        //        bike = 100;
-        //    }
-                    
-                    
-        //}
-                                               
-                                               
-                                               
-                                               
-                                               
-                                               
-    }
+        
+
+
+
+
+
+
+}
     
 
 
