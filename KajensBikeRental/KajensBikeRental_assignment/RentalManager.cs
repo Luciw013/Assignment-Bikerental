@@ -9,13 +9,7 @@ namespace KajensBikeRental_assignment
 
         public void StartRental(Customer customer, List<Vehicle> vehicles)
         {
-            foreach (Vehicle bike in vehicles)
-            {
-                if (bike is EBike electricalbike && electricalbike.BatteryLevel < 30) //hindrar uthyrning av elcykel med batterinivå under 30%
-                {
-                    bike.Rentable = false;          
-                }
-            }
+            
 
             Console.WriteLine("Ange fordons-id för att välja cykel:");
             int chosenbike = int.Parse(Console.ReadLine());
@@ -32,7 +26,7 @@ namespace KajensBikeRental_assignment
                 return;
             }
 
-            if  (customer.Age <= 15)  //kollar kund minimum-åldersgräns
+            if  (customer.Age < 15)  //kollar kund minimum-åldersgräns
             {
                 Console.WriteLine("Uthyrning till kund under 15 år ej tillåtet.");
                 return;
@@ -75,7 +69,6 @@ namespace KajensBikeRental_assignment
                 if (bike is EBike ebike && ebike.BatteryLevel < 30)
                 {
                     ebike.BatteryLevel = 100;
-                    ebike.Rentable = true;
                 }
             }
         }
